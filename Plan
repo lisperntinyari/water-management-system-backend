@@ -25,3 +25,24 @@ Bills Table
 8. bill units
 
 
+Mechanics Table 
+1. mechanicId
+2. mechanicName
+3. mechanicPhoneNumber 
+4. speciality 
+
+
+
+Review Table
+1. reviewID
+2. mechanicId 
+3. review 
+4. reviewdescirption
+
+Products Table
+1. product Id
+2. product Name
+3. product amount
+4. product description 
+
+

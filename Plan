@@ -1,0 +1,27 @@
+Tenants Table 
+
+1. tenantId
+2. tenant Name
+3. tenant PhoneNumber 
+4. tenant House No.
+5. tenant email
+6. tenant password
+
+
+Admin Table
+1. Name
+2. email
+3. password
+
+
+Bills Table 
+1. bill ID 
+2. bill meter no.
+3. bill house no.
+4. bill amount 
+5. bill month
+6. bill year 
+7. bill Status
+8. bill units
+
+

@@ -26,14 +26,17 @@ app.use(BodyParser.json({ limit:'100mb' }))
 
 
 
-const AuthRoute = require('./Routes/AuthRoutes')
+const AuthRoutes = require('./Routes/AuthRoutes')
+const TenantRoutes = require('./Routes/TenantRoutes')
 
 
 
-app.use('/auth',AuthRoute)
+app.use('/auth',AuthRoutes)
+app.use('/tenant',TenantRoutes)
 
 
 app.get('/',(req,res) => {
+    return res.send("Water management system backend ")
 
 })
 

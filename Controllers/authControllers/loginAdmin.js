@@ -21,8 +21,12 @@ const loginAdmin = async (req,res) => {
                 return res.json({
                     msg:'Login Successful',
                     success:true,
-                    authType:"admin",
-                    user:findUser
+                    user: {
+                        email:findUser.email,
+                        password:findUser.password,
+                        adminId:findUser._id,
+                        authType:"admin",
+                    }
                 })
             }else {
                 return res.json({

@@ -1,12 +1,9 @@
 const {Schema} = require("mongoose");
+const mongoose = require("mongoose");
 
 
 const TenantModel = new Schema({
-    tenantId:{
-        type:String,
-        required:true,
-        unique:true,
-    },
+
     fullName:{
         type:String,
         required:true,
@@ -34,3 +31,5 @@ const TenantModel = new Schema({
     }
 
 })
+
+module.exports = mongoose.model("tenants",TenantModel)

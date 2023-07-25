@@ -28,16 +28,17 @@ app.use(BodyParser.json({ limit:'100mb' }))
 
 const AuthRoutes = require('./Routes/AuthRoutes')
 const TenantRoutes = require('./Routes/TenantRoutes')
+const BillRoutes = require('./Routes/BillRoutes')
 
 
 
 app.use('/auth',AuthRoutes)
 app.use('/tenant',TenantRoutes)
+app.use('/bills',BillRoutes)
 
 
 app.get('/',(req,res) => {
     return res.send("Water management system backend ")
-
 })
 
 const PORT = process.env.PORT || 9000

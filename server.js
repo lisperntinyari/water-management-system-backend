@@ -29,12 +29,14 @@ app.use(BodyParser.json({ limit:'100mb' }))
 const AuthRoutes = require('./Routes/AuthRoutes')
 const TenantRoutes = require('./Routes/TenantRoutes')
 const BillRoutes = require('./Routes/BillRoutes')
+const HouseRoutes = require('./Routes/HouseRoutes')
 
 
 
 app.use('/auth',AuthRoutes)
 app.use('/tenant',TenantRoutes)
 app.use('/bills',BillRoutes)
+app.use('/houses',HouseRoutes)
 
 
 app.get('/',(req,res) => {

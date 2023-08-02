@@ -3,8 +3,9 @@ const mongoose= require("mongoose");
 
 const connectDB = async () => {
     try {
+        const RemoteDatabaseURL = process.env.REMOTE_DATABASE_URL
         const LocalDatabaseURL = process.env.LOCAL_DATABASE_URL
-        let DatabaseURL = LocalDatabaseURL;
+        let DatabaseURL = RemoteDatabaseURL;
 
         const conn = await mongoose.connect(DatabaseURL,{
             useNewUrlParser:true,
